@@ -42,7 +42,9 @@ Claude Code に「サイトをローカルで表示して」と頼むと、確�
 
 ## 公開の仕組み
 
-- ファイルは GitHub（団体名義のアカウント）に保存し、GitHub Pages が自動で公開します
+- 公開URL（準備版）：https://tojo-create.github.io/100nennou-site/
+- GitHub リポジトリ：https://github.com/tojo-create/100nennou-site （アカウント tojo-create。団体名義への移管は後日）
+- ファイルは GitHub に保存し、GitHub Pages が自動で公開します
 - 保存のたびに公開ページが更新されます。壊したときは「昨日の状態に戻して」で戻せます
 - 独自ドメイン（候補：100nennou.jp）は取得後に接続します
 

@@ -60,7 +60,9 @@ NPO法人「100年脳・健康づくり推進協議会」（設立準備中）�
 
 ## 公開
 
-- GitHub リポジトリ（団体名義）の `main` に push すると GitHub Pages が自動公開（`.nojekyll` あり）。
+- リポジトリ `tojo-create/100nennou-site`（origin 設定済み）。`main` に push すると GitHub Pages が自動公開（`.nojekyll` あり、反映まで1〜3分）。
+- 公開URL：https://tojo-create.github.io/100nennou-site/ 。gh CLI は `C:\Program Files\GitHub CLI\gh.exe`（tojo-create でログイン済み）。
+- 団体名義アカウントができたら、リポジトリを Settings → Transfer で移管する（URLが変わるので先方に周知）。
 - 公開前にスマホ幅（約400px）でも崩れないことを見る。
 - 準備版の間は全ページ `<meta name="robots" content="noindex">`。正式公開時に外す。
 - コミットメッセージは日本語で「お知らせ追加：〇〇」のように内容が分かる形に。
