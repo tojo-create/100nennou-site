@@ -10,7 +10,7 @@ NPO法人「100年脳・健康づくり推進協議会」（設立準備中）�
 
 - **先方に見せた版は絶対に消さない・上書きしない。** 修正ラウンドごとに新しい版フォルダを作る。
 - フォルダ直下（`index.html`〜`contact.html`、`assets/`、`images/`）＝第2版（2026-10-27公開、最初に共有したURL）。**ここは編集しない。**
-- `v3/` ＝第3版（2026-10-28）。最新版は番号が一番大きい `vN/` フォルダ。修正依頼は原則この最新版に対して行う。
+- `v3/` ＝第3版、`v4/` ＝第4版（いずれも2026-10-28）。最新版は番号が一番大きい `vN/` フォルダ。修正依頼は原則この最新版に対して行う。
 - 「次の版を作って」「新しい版として」と言われたら：最新の `vN/` を `v(N+1)/` にコピーし、`v(N+1)/assets/site.js` のドラフトバナーの「第N版」を更新し、`versions.html` に行を追加し、README の公開URL一覧にも追記してから push する。
 - 公開URLは `https://tojo-create.github.io/100nennou-site/vN/`。push すれば自動で公開される（新しいリポジトリは不要）。
 - 各版フォルダは自己完結（html・assets・images をすべて持つ）。相対パスなのでそのまま動く。
@@ -65,13 +65,15 @@ NPO法人「100年脳・健康づくり推進協議会」（設立準備中）�
 - 未確定情報には `<span class="tag">仮</span>` を付ける。確定したらタグを外す。
 - 新しいセクションは `.section` / `.section.alt` / `.section.tint` を交互に使い、`eyebrow → h2 → lead` の順を守る。
 - 見出しの語の途中で改行させたくない語句は `<span class="nw">` で囲む（ブランド名・団体名は必ず）。
+- **折り返しルール（第4版から）**：見出し（h1〜h4）・宣言文・CTA文は CSS の `word-break:keep-all` により「、」「。」「・」や括弧の位置でだけ折り返す。読点のない長い見出しは、折ってよい位置に `<wbr>` を入れる（例：`エビデンスと<wbr>社会実装をつなぐ`）。PC幅で意図した位置で折りたいときは `<br>`、PCだけで折るなら `<br class="pc">`（640px以下で無効）。できれば2行目が1行目より長くなる位置で折る。リード文・本文は通常の折り返し（keep-all を付けない。ラグが目立つため）。
+- 修正後は PC幅（1280px）とスマホ幅（400px）の両方で、横スクロールが出ないこと・見出しが単語の途中で折れていないことを確認する（ブラウザの JS で各見出しの折り返し位置を一覧化すると早い）。
 - 画像は `images/` に置き、`alt` を必ず書く。写真は仮のものなので差し替え時は alt の「（仮）」も外す。
 - 絵文字は使わない。
 
 ## 公開
 
 - リポジトリ `tojo-create/100nennou-site`（origin 設定済み）。`main` に push すると GitHub Pages が自動公開（`.nojekyll` あり、反映まで1〜3分）。
-- 公開URL：https://tojo-create.github.io/100nennou-site/ （第2版）、/v3/ （第3版）。gh CLI は `C:\Program Files\GitHub CLI\gh.exe`（tojo-create でログイン済み）。
+- 公開URL：https://tojo-create.github.io/100nennou-site/ （第2版）、/v3/ （第3版）、/v4/ （第4版・最新）。gh CLI は `C:\Program Files\GitHub CLI\gh.exe`（tojo-create でログイン済み）。
 - 団体名義アカウントができたら、リポジトリを Settings → Transfer で移管する（URLが変わるので先方に周知）。
 - 公開前にスマホ幅（約400px）でも崩れないことを見る。
 - 準備版の間は全ページ `<meta name="robots" content="noindex">`。正式公開時に外す。

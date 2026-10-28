@@ -23,7 +23,7 @@ NPO法人「100年脳・健康づくり推進協議会」（設立準備中）�
 | `images/` | 写真・図版 |
 | `README.md` | この説明書。人が読む |
 | `CLAUDE.md` | Claude Code が読む説明書。用語ルールと更新の作法 |
-| `v3/` | たたき台 第3版（2026-10-28）。フォルダ直下は第2版のまま残してある |
+| `v3/` `v4/` | たたき台 第3版・第4版（2026-10-28）。フォルダ直下は第2版のまま残してある。最新は番号の大きいほう |
 | `versions.html` | 版の一覧ページ（各版の公開URLとおもな変更点） |
 | `_old/` | 第1版（公開対象外） |
 
@@ -54,6 +54,7 @@ Claude Code に「サイトをローカルで表示して」と頼むと、確�
 
 - 公開URL（第2版）：https://tojo-create.github.io/100nennou-site/
 - 公開URL（第3版）：https://tojo-create.github.io/100nennou-site/v3/
+- 公開URL（第4版・最新）：https://tojo-create.github.io/100nennou-site/v4/
 - GitHub リポジトリ：https://github.com/tojo-create/100nennou-site （アカウント tojo-create。団体名義への移管は後日）
 - ファイルは GitHub に保存し、GitHub Pages が自動で公開します
 - 保存のたびに公開ページが更新されます。壊したときは「昨日の状態に戻して」で戻せます
